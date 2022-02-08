@@ -59,6 +59,11 @@ int main() {
     cout << "Triangle b ";
     PrintTriangle(b);
     
+    /*
+    int x[] = {1, 3, 7, 12};
+    int y[4];
+    y = x;*/
+
     return 0;
 }
 

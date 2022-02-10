@@ -44,9 +44,18 @@ Pet readPetFromFile(ifstream &file) {
 
 int main() {
     ifstream petFile("pets.txt");
+    int index = 0;
+    Pet pets[5];
     while(petFile.peek() != EOF) {
         Pet a =readPetFromFile(petFile);
-        printPet(a);
-        cout << endl;
+        //printPet(a);
+        //cout << endl;
+        pets[index] = a;
+        index++;
+    }
+    for (int i = 4; i != -1; i--)
+    {
+      printPet(pets[i]);
+      cout << endl;
     }
 }
